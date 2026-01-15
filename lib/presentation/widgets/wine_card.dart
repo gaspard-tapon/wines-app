@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../domain/entities/cellar_wine.dart';
 import '../../domain/entities/wine.dart';
-import 'annotation_widget.dart';
 import 'rating_widget.dart';
-import 'stock_controls.dart';
 
 class WineCard extends StatelessWidget {
   final Wine wine;
