@@ -63,10 +63,7 @@ class HomePage extends ConsumerWidget {
                 color: theme.colorScheme.error,
               ),
               const SizedBox(height: 16),
-              Text(
-                'Erreur de chargement',
-                style: theme.textTheme.titleMedium,
-              ),
+              Text('Erreur de chargement', style: theme.textTheme.titleMedium),
               const SizedBox(height: 8),
               TextButton(
                 onPressed: () => ref.refresh(cellarNotifierProvider),
@@ -157,9 +154,7 @@ class HomePage extends ConsumerWidget {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) => const AvailableWinesPage(),
-            ),
+            MaterialPageRoute(builder: (context) => const AvailableWinesPage()),
           );
         },
         icon: const Icon(Icons.add),
